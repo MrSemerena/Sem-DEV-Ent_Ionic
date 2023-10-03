@@ -1,0 +1,7 @@
+{
+  "name": "Seme-DEVEnt-App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
