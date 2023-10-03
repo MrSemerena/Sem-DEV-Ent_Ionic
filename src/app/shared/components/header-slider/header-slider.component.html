@@ -1,0 +1,88 @@
+<swiper-container
+  [modules]="swiperModules"  
+  [loop]="true"
+  [autoplay]="{
+    delay: 3000
+  }"
+  [slidesPerView]="1"
+  effect="coverflow"
+  [coverflowEffect]="{
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+    scale: 1
+  }"
+>
+  <swiper-slide [style.margin]="'0 auto'" *ngFor="let slide of header_slides" >
+    <ng-container {{slide.id}} >
+      <div class="slide-container" 
+        [style.background-image]="'url('+slide.bg_image+')'" 
+        [style.background-repeat]="'no-repeat'" 
+        [style.background-size]="'cover'"
+        [style.width]="'100%'"
+        [style.height]="'18rem'"
+        [style.margin-top]="'10px'"
+        [style.margin-bottom]="'10px'"
+      >
+        <div class="gradient"></div>
+  
+        <div class="info"
+          [style.margin]="'0 auto'"
+          [style.alifn-items]="'center'"
+        >
+          <div class="gradient"></div>
+          <div class="info-header">
+            <div class="slide-avatar">
+              <ion-avatar> <img [src]="slide.avatar" alt=""> </ion-avatar>
+            </div>
+            <ion-title> <h1> {{slide.category}} </h1> </ion-title>
+            <ion-title> <h2> {{slide.title}} </h2> </ion-title>
+          </div>
+          <br>
+          <div class="info-body">
+            <ion-text>
+              <p> {{slide.description}} </p>
+            </ion-text>
+          </div>
+        </div>
+      </div>
+    </ng-container>  
+  </swiper-slide>
+  <swiper-slide [style.margin]="'0 auto'" *ngFor="let slide of anime_header_slides" >
+    <ng-container {{slide.id}} >
+      <div class="slide-container" 
+        [style.background-image]="'url('+slide.bg_image+')'" 
+        [style.background-repeat]="'no-repeat'" 
+        [style.background-size]="'cover'"
+        [style.width]="'100%'"
+        [style.height]="'18rem'"
+        [style.margin-top]="'10px'"
+        [style.margin-bottom]="'10px'"
+      >
+        <div class="gradient"></div>
+  
+        <div class="info"
+          [style.margin]="'0 auto'"
+          [style.alifn-items]="'center'"
+        >
+          <div class="gradient"></div>
+          <div class="info-header">
+            <div class="slide-avatar">
+              <ion-avatar> <img [src]="slide.avatar" alt=""> </ion-avatar>
+            </div>
+            <ion-title> <h1> {{slide.section}} </h1> </ion-title>
+            <ion-title> <h2> {{slide.title}} </h2> </ion-title>
+          </div>
+          <br>
+          <div class="info-body">
+            <ion-text>
+              <p> {{slide.description}} </p>
+            </ion-text>
+          </div>
+        </div>
+      </div>
+    </ng-container>  
+  </swiper-slide>
+</swiper-container>

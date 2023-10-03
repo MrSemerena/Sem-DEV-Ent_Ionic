@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { VideogamesPageRoutingModule } from './videogames-routing.module';
 
 import { VideogamesPage } from './videogames.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VideogamesPageRoutingModule
+    VideogamesPageRoutingModule,
+    SharedModule
   ],
   declarations: [VideogamesPage]
 })

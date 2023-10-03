@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DauPageRoutingModule } from './dau-routing.module';
 
 import { DauPage } from './dau.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DauPageRoutingModule
+    DauPageRoutingModule,
+    SharedModule
   ],
   declarations: [DauPage]
 })

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { HorrorPageRoutingModule } from './horror-routing.module';
 
 import { HorrorPage } from './horror.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HorrorPageRoutingModule
+    HorrorPageRoutingModule,
+    SharedModule
   ],
   declarations: [HorrorPage]
 })

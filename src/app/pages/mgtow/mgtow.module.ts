@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { MgtowPageRoutingModule } from './mgtow-routing.module';
 
 import { MgtowPage } from './mgtow.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MgtowPageRoutingModule
+    MgtowPageRoutingModule,
+    SharedModule
   ],
   declarations: [MgtowPage]
 })
