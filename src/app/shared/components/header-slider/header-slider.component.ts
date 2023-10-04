@@ -130,6 +130,103 @@ export class HeaderSliderComponent  implements OnInit {
     }
   ];
 
+  dau_header_slides: {
+    id: number,
+    bg_image: string,
+    avatar: string,
+    section: string;
+    title: string;
+    subtitle: string;
+    description: string
+  }[] = [
+    {
+      id: 0,
+      bg_image: "/assets/dau_slides/dau_characters_bg_slide.jpg",
+      avatar: "/assets/dau_slides/dau_characters-avatar.jpeg",
+      section: "The Devil Artimus Universe Central",
+      title: "DAU Characters",
+      subtitle: "Meet the stars of the show!",
+      description: "Main characters, side characters and also some special guests are the ones that create this fantstic and funny universe. Remarkable for its clever and mature humor and a wide variety of scenarios available..."
+    },
+    {
+      id: 1,
+      bg_image: "/assets/dau_slides/dau_series_bg_slide.jpg",
+      avatar: "/assets/dau_slides/dau_series_avatar.jpg",
+      section: "The Devil Artimus Universe Central",
+      title: "DAU Series",
+      subtitle: "This is hpw the plot is organized...",
+      description: "There are a lot of series here. Some of them are regular, such as Cell VS, but other are spontaneous. However, regardless of the previous, the fun and laughs are secured, because there is a lot of that..."
+    },
+    {
+      id: 2,
+      bg_image: "/assets/dau_slides/dau_waifus_bg_slide.jpg",
+      avatar: "/assets/dau_slides/dau_waifus_avatar.jpeg",
+      section: "The Devil Artimus Universe Central",
+      title: "DAU Waifus",
+      subtitle: "The Eye-Candy has arrived!",
+      description: "Waifus are also present here! As lovely and cheerful as always and they will prove to you exactly why they are so loved by fans. Are you ready?"
+    },
+    {
+      id: 3,
+      bg_image: "/assets/dau_slides/dau_compilations_bg_slide.jpeg",
+      avatar: "/assets/dau_slides/dau_compilations_avatar.jpg",
+      section: "The Devil Artimus Universe Central",
+      title: "DAU Compilations",
+      subtitle: "These are the best way to meet the DAU",
+      description: "The compilations are awesome, because they picked some of the best moments and clips of several episodes and sagas, put them together for those new adopters. We highly recommend to cathc any so you can have a peek..."
+    }
+  ];
+
+  horror_header_slides: {
+    id: number,
+    bg_image: string,
+    avatar: string,
+    category: string;
+    title: string;
+    subtitle: string;
+    description: string
+  }[] = [];
+
+  manga_header_slides: {
+    id: number,
+    bg_image: string,
+    avatar: string,
+    category: string;
+    title: string;
+    subtitle: string;
+    description: string
+  }[] = [];
+
+  mgtow_header_slides: {
+    id: number,
+    bg_image: string,
+    avatar: string,
+    category: string;
+    title: string;
+    subtitle: string;
+    description: string
+  }[] = [];
+
+  videogames_header_slides: {
+    id: number,
+    bg_image: string,
+    avatar: string,
+    category: string;
+    title: string;
+    subtitle: string;
+    description: string
+  }[] = [];
+
+  movies_header_slides: {
+    id: number,
+    bg_image: string,
+    avatar: string,
+    category: string;
+    title: string;
+    subtitle: string;
+    description: string
+  }[] = [];
+
   constructor() { }
 
   ngOnInit() {}
